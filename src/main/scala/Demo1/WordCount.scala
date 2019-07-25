@@ -22,5 +22,6 @@ object WordCount {
     println(rdd.partitions.size)
 
 
+
   }
 }

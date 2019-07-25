@@ -34,7 +34,7 @@ object DemoJson {
     val student_detail =sc.read.option("multiline","true").json("D:\\mypro\\spark\\student_detai.json")
 
 
-    //println(student_detail.printSchema())
+    println(student_detail.printSchema())
 
     //Nested Json
     val student: DataFrame =sc.read.option("multiline","true").json("D:\\mypro\\spark\\student.json")
@@ -57,6 +57,73 @@ object DemoJson {
     student.createOrReplaceTempView("student")
     sc.sql("select explode(phoneNumbers) from student").show()
 
+    /* OUTPUT
+
+root
+ |-- Accessory: string (nullable = true)
+ |-- BreastSize: string (nullable = true)
+ |-- Class: string (nullable = true)
+ |-- Club: string (nullable = true)
+ |-- Color: string (nullable = true)
+ |-- Crush: string (nullable = true)
+ |-- EyeType: string (nullable = true)
+ |-- Eyes: string (nullable = true)
+ |-- Gender: string (nullable = true)
+ |-- Hairstyle: string (nullable = true)
+ |-- ID: string (nullable = true)
+ |-- Info: string (nullable = true)
+ |-- Name: string (nullable = true)
+ |-- Persona: string (nullable = true)
+ |-- ScheduleAction: string (nullable = true)
+ |-- ScheduleDestination: string (nullable = true)
+ |-- ScheduleTime: string (nullable = true)
+ |-- Seat: string (nullable = true)
+ |-- Stockings: string (nullable = true)
+ |-- Strength: string (nullable = true)
+
+()
+root
+ |-- address: struct (nullable = true)
+ |    |-- city: string (nullable = true)
+ |    |-- postalCode: string (nullable = true)
+ |    |-- state: string (nullable = true)
+ |    |-- streetAddress: string (nullable = true)
+ |-- age: long (nullable = true)
+ |-- firstName: string (nullable = true)
+ |-- gender: string (nullable = true)
+ |-- lastName: string (nullable = true)
+ |-- phoneNumbers: array (nullable = true)
+ |    |-- element: struct (containsNull = true)
+ |    |    |-- number: string (nullable = true)
+ |    |    |-- type: string (nullable = true)
+
+()
++-----+-----+
+| city|state|
++-----+-----+
+|Surat|   GJ|
++-----+-----+
+
++----------+----+
+|    number|type|
++----------+----+
+|7383627627|home|
++----------+----+
+
++----------+----+
+|    number|type|
++----------+----+
+|7383627627|home|
++----------+----+
+
++------------------+
+|               col|
++------------------+
+|[7383627627, home]|
++------------------+
+
+
+    * */
 
   }
 
