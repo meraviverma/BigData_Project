@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3fd77aad-808f-4b3a-b0fc-127c083ca30c" name="Default Changelist" comment="" />
+    <list default="true" id="3fd77aad-808f-4b3a-b0fc-127c083ca30c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/SparkDefGuide/Chapter5/Chapter5.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/SparkDefGuide/Chapter5/Chapter5.scala" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,7 +31,7 @@
         <counts>
           <entry key="json" value="2" />
           <entry key="oracle" value="75" />
-          <entry key="scala" value="3400" />
+          <entry key="scala" value="5714" />
           <entry key="xml" value="14" />
         </counts>
       </usages-collector>
@@ -36,7 +39,7 @@
         <counts>
           <entry key="JSON" value="2" />
           <entry key="PLAIN_TEXT" value="75" />
-          <entry key="Scala" value="3400" />
+          <entry key="Scala" value="5714" />
           <entry key="XML" value="14" />
         </counts>
       </usages-collector>
@@ -46,7 +49,7 @@
           <entry key="csv" value="3" />
           <entry key="json" value="6" />
           <entry key="oracle" value="1" />
-          <entry key="scala" value="21" />
+          <entry key="scala" value="22" />
           <entry key="txt" value="5" />
         </counts>
       </usages-collector>
@@ -56,7 +59,7 @@
           <entry key="CSV" value="3" />
           <entry key="JSON" value="6" />
           <entry key="PLAIN_TEXT" value="6" />
-          <entry key="Scala" value="21" />
+          <entry key="Scala" value="22" />
         </counts>
       </usages-collector>
     </session>
@@ -75,7 +78,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/SparkDefGuide/chapter2/Chapter2.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
+            <state relative-caret-position="684">
               <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
               <folding>
                 <element signature="e#32#62#0" expanded="true" />
@@ -87,31 +90,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/SparkDefGuide/Chapter3/Chapter3.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
+            <state relative-caret-position="374">
               <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/SparkDefGuide/Chapter5/Chapter5.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="35" column="28" lean-forward="true" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+            <state relative-caret-position="170">
+              <caret line="16" column="43" lean-forward="true" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
               <folding>
                 <element signature="e#32#62#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/SparkDefGuide/structfield/Demo1.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1461">
-              <caret line="19" column="82" selection-start-line="19" selection-start-column="82" selection-end-line="19" selection-end-column="82" />
-              <folding>
-                <element signature="e#53#84#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -165,6 +156,15 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/SparkDefGuide/structfield/Demo1.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -186,11 +186,11 @@
         <option value="$PROJECT_DIR$/src/main/scala/SparkDefGuide/Chapter2.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/SparkDefGuide/chapter2/Chapter2.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/SparkDefGuide/Chapter3/Chapter3.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/SparkDefGuide/Chapter5/Chapter5.scala" />
         <option value="$PROJECT_DIR$/data-sparkguide/Emp1.txt" />
         <option value="$PROJECT_DIR$/data-sparkguide/emp.txt" />
         <option value="$PROJECT_DIR$/data-sparkguide/Employee.txt" />
         <option value="$PROJECT_DIR$/src/main/scala/SparkDefGuide/structfield/Demo1.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/SparkDefGuide/Chapter5/Chapter5.scala" />
       </list>
     </option>
   </component>
@@ -275,7 +275,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566033064302" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566070782061" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -299,7 +299,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Demo1">
+  <component name="RunManager" selected="Application.Chapter5">
     <configuration name="Chapter2 (1)" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="SparkDefGuide.chapter2.SparkDefGuide.Chapter2" />
       <module name="spark" />
@@ -374,8 +374,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Demo1" />
         <item itemvalue="Application.Chapter5" />
+        <item itemvalue="Application.Demo1" />
         <item itemvalue="Application.Chapter3" />
         <item itemvalue="Application.Chapter2 (2)" />
         <item itemvalue="Application.Chapter2 (1)" />
@@ -528,16 +528,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data-sparkguide/2014-summary.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state>
-          <caret column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.3.1/spark-sql_2.11-2.3.1-sources.jar!/org/apache/spark/sql/Dataset.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -545,37 +535,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/SparkDefGuide/chapter2/Chapter2.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-          <folding>
-            <element signature="e#32#62#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/SparkDefGuide/Chapter3/Chapter3.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data-sparkguide/2015-summary.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="21" selection-start-column="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/SparkDefGuide/Chapter5/Chapter5.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="35" column="28" lean-forward="true" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
-          <folding>
-            <element signature="e#32#62#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -607,12 +570,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/SparkDefGuide/Chapter3/Chapter3.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/SparkDefGuide/chapter2/Chapter2.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+          <folding>
+            <element signature="e#32#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/SparkDefGuide/structfield/Demo1.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1461">
-          <caret line="19" column="82" selection-start-line="19" selection-start-column="82" selection-end-line="19" selection-end-column="82" />
+        <state relative-caret-position="153">
+          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data-sparkguide/2014-summary.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state>
+          <caret column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/SparkDefGuide/Chapter5/Chapter5.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" column="43" lean-forward="true" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
           <folding>
-            <element signature="e#53#84#0" expanded="true" />
+            <element signature="e#32#62#0" expanded="true" />
           </folding>
         </state>
       </provider>
