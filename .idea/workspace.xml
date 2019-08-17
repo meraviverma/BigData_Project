@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3fd77aad-808f-4b3a-b0fc-127c083ca30c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3fd77aad-808f-4b3a-b0fc-127c083ca30c" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,7 +28,7 @@
         <counts>
           <entry key="json" value="2" />
           <entry key="oracle" value="75" />
-          <entry key="scala" value="3395" />
+          <entry key="scala" value="3400" />
           <entry key="xml" value="14" />
         </counts>
       </usages-collector>
@@ -38,7 +36,7 @@
         <counts>
           <entry key="JSON" value="2" />
           <entry key="PLAIN_TEXT" value="75" />
-          <entry key="Scala" value="3395" />
+          <entry key="Scala" value="3400" />
           <entry key="XML" value="14" />
         </counts>
       </usages-collector>
@@ -48,8 +46,8 @@
           <entry key="csv" value="3" />
           <entry key="json" value="6" />
           <entry key="oracle" value="1" />
-          <entry key="scala" value="19" />
-          <entry key="txt" value="2" />
+          <entry key="scala" value="21" />
+          <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -57,23 +55,14 @@
           <entry key="CLASS" value="1" />
           <entry key="CSV" value="3" />
           <entry key="JSON" value="6" />
-          <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Scala" value="19" />
+          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="Scala" value="21" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Demo1/WordCount.scala">
           <provider selected="true" editor-type-id="text-editor">
@@ -104,14 +93,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/SparkDefGuide/Chapter5/Chapter5.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="38" column="41" lean-forward="true" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
+            <state relative-caret-position="152">
+              <caret line="35" column="28" lean-forward="true" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
               <folding>
                 <element signature="e#32#62#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/SparkDefGuide/structfield/Demo1.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1461">
+              <caret line="19" column="82" selection-start-line="19" selection-start-column="82" selection-end-line="19" selection-end-column="82" />
+              <folding>
+                <element signature="e#53#84#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/conf/SparkConfiguration.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="80" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -177,6 +187,10 @@
         <option value="$PROJECT_DIR$/src/main/scala/SparkDefGuide/chapter2/Chapter2.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/SparkDefGuide/Chapter3/Chapter3.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/SparkDefGuide/Chapter5/Chapter5.scala" />
+        <option value="$PROJECT_DIR$/data-sparkguide/Emp1.txt" />
+        <option value="$PROJECT_DIR$/data-sparkguide/emp.txt" />
+        <option value="$PROJECT_DIR$/data-sparkguide/Employee.txt" />
+        <option value="$PROJECT_DIR$/src/main/scala/SparkDefGuide/structfield/Demo1.scala" />
       </list>
     </option>
   </component>
@@ -241,7 +255,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="SparkDefGuide" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SparkProject" type="b2602c69:ProjectViewProjectNode" />
@@ -250,7 +264,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="SparkDefGuide" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -262,7 +275,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566031924408" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566033064302" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -286,7 +299,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Chapter5">
+  <component name="RunManager" selected="Application.Demo1">
     <configuration name="Chapter2 (1)" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="SparkDefGuide.chapter2.SparkDefGuide.Chapter2" />
       <module name="spark" />
@@ -306,19 +319,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="SparkDefGuide.chapter2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Chapter2" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="SparkDefGuide.Chapter2" />
-      <module name="spark" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SparkDefGuide.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -352,20 +352,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Demo1" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="SparkDefGuide.structfield.Demo1" />
+      <module name="spark" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SparkDefGuide.structfield.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.Chapter2" />
       <item itemvalue="Application.Chapter2 (1)" />
       <item itemvalue="Application.Chapter2 (2)" />
       <item itemvalue="Application.Chapter3" />
       <item itemvalue="Application.Chapter5" />
+      <item itemvalue="Application.Demo1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Demo1" />
         <item itemvalue="Application.Chapter5" />
         <item itemvalue="Application.Chapter3" />
         <item itemvalue="Application.Chapter2 (2)" />
         <item itemvalue="Application.Chapter2 (1)" />
-        <item itemvalue="Application.Chapter2" />
       </list>
     </recent_temporary>
   </component>
@@ -386,7 +399,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24130106" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18759455" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -477,13 +490,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/conf/SparkConfiguration.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -565,10 +571,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/SparkDefGuide/Chapter5/Chapter5.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="38" column="41" lean-forward="true" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
+        <state relative-caret-position="152">
+          <caret line="35" column="28" lean-forward="true" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
           <folding>
             <element signature="e#32#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data-sparkguide/Emp1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data-sparkguide/emp.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data-sparkguide/Employee.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/conf/SparkConfiguration.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="80" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/SparkDefGuide/structfield/Demo1.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1461">
+          <caret line="19" column="82" selection-start-line="19" selection-start-column="82" selection-end-line="19" selection-end-column="82" />
+          <folding>
+            <element signature="e#53#84#0" expanded="true" />
           </folding>
         </state>
       </provider>
