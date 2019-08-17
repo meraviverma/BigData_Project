@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3fd77aad-808f-4b3a-b0fc-127c083ca30c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DemoFileFormat/DemoJson$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DemoFileFormat/DemoJson$.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,7 +30,7 @@
         <counts>
           <entry key="json" value="2" />
           <entry key="oracle" value="75" />
-          <entry key="scala" value="2509" />
+          <entry key="scala" value="3395" />
           <entry key="xml" value="14" />
         </counts>
       </usages-collector>
@@ -39,7 +38,7 @@
         <counts>
           <entry key="JSON" value="2" />
           <entry key="PLAIN_TEXT" value="75" />
-          <entry key="Scala" value="2509" />
+          <entry key="Scala" value="3395" />
           <entry key="XML" value="14" />
         </counts>
       </usages-collector>
@@ -47,9 +46,9 @@
         <counts>
           <entry key="class" value="1" />
           <entry key="csv" value="3" />
-          <entry key="json" value="5" />
+          <entry key="json" value="6" />
           <entry key="oracle" value="1" />
-          <entry key="scala" value="17" />
+          <entry key="scala" value="19" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
@@ -57,9 +56,9 @@
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="CSV" value="3" />
-          <entry key="JSON" value="5" />
+          <entry key="JSON" value="6" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Scala" value="17" />
+          <entry key="Scala" value="19" />
         </counts>
       </usages-collector>
     </session>
@@ -84,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/SparkDefGuide/chapter2/Chapter2.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+            <state relative-caret-position="371">
+              <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
               <folding>
                 <element signature="e#32#62#0" expanded="true" />
               </folding>
@@ -97,10 +96,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.3.1/spark-sql_2.11-2.3.1-sources.jar!/org/apache/spark/sql/Dataset.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/SparkDefGuide/Chapter3/Chapter3.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="1177" column="3" lean-forward="true" selection-start-line="1177" selection-start-column="3" selection-end-line="1177" selection-end-column="3" />
+            <state relative-caret-position="349">
+              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/SparkDefGuide/Chapter5/Chapter5.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="38" column="41" lean-forward="true" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
+              <folding>
+                <element signature="e#32#62#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data-sparkguide/2015-summary.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="21" selection-start-column="2" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -155,6 +175,8 @@
         <option value="$PROJECT_DIR$/src/main/scala/conf/SparkConfiguration.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/SparkDefGuide/Chapter2.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/SparkDefGuide/chapter2/Chapter2.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/SparkDefGuide/Chapter3/Chapter3.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/SparkDefGuide/Chapter5/Chapter5.scala" />
       </list>
     </option>
   </component>
@@ -193,6 +215,11 @@
             <path>
               <item name="SparkProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="data-sparkguide" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SparkProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -216,6 +243,15 @@
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="SparkDefGuide" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SparkProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="SparkDefGuide" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter2" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -226,7 +262,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565872340452" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566031924408" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -250,7 +286,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Chapter2 (2)">
+  <component name="RunManager" selected="Application.Chapter5">
     <configuration name="Chapter2 (1)" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="SparkDefGuide.chapter2.SparkDefGuide.Chapter2" />
       <module name="spark" />
@@ -290,12 +326,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoJson" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="DemoFileFormat.DemoJson" />
+    <configuration name="Chapter3" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="SparkDefGuide.Chapter3.Chapter3" />
       <module name="spark" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DemoFileFormat.*" />
+          <option name="PATTERN" value="SparkDefGuide.Chapter3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -303,12 +339,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Mysql2Spark" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="database2spark.Mysql2Spark" />
+    <configuration name="Chapter5" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="SparkDefGuide.Chapter5.Chapter5" />
       <module name="spark" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="database2spark.*" />
+          <option name="PATTERN" value="SparkDefGuide.Chapter5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -317,19 +353,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.DemoJson" />
-      <item itemvalue="Application.Mysql2Spark" />
       <item itemvalue="Application.Chapter2" />
       <item itemvalue="Application.Chapter2 (1)" />
       <item itemvalue="Application.Chapter2 (2)" />
+      <item itemvalue="Application.Chapter3" />
+      <item itemvalue="Application.Chapter5" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Chapter5" />
+        <item itemvalue="Application.Chapter3" />
         <item itemvalue="Application.Chapter2 (2)" />
         <item itemvalue="Application.Chapter2 (1)" />
         <item itemvalue="Application.Chapter2" />
-        <item itemvalue="Application.DemoJson" />
-        <item itemvalue="Application.Mysql2Spark" />
       </list>
     </recent_temporary>
   </component>
@@ -505,8 +541,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/SparkDefGuide/chapter2/Chapter2.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+        <state relative-caret-position="371">
+          <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+          <folding>
+            <element signature="e#32#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/SparkDefGuide/Chapter3/Chapter3.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data-sparkguide/2015-summary.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/SparkDefGuide/Chapter5/Chapter5.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="38" column="41" lean-forward="true" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
           <folding>
             <element signature="e#32#62#0" expanded="true" />
           </folding>
