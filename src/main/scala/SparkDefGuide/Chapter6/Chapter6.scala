@@ -55,6 +55,9 @@ Structs
 Arrays
 array_contains
 size
+explode
+map
+udf
  */
 object Chapter6 extends  SparkConfiguration{
 
@@ -162,11 +165,367 @@ object Chapter6 extends  SparkConfiguration{
 
     df.select(size(split(col("Description")," "))).show(2)
 
+    println("#############  Arrays Contains ######################## ")
     df.select(array_contains(split(col("Description")," "),"WHITE")).show(2)
 
-  df.withColumn("splitted",split(col("Description")," "))
+    println("#############  Explode ######################## ")
+    df.withColumn("splitted",split(col("Description")," "))
       .withColumn("exploded",explode(col("splitted")))
       .select("Description","InvoiceNo","splitted","exploded").show(2)
+
+    println("#############  Map ######################## ")
+     df.select(map(col("Description"),col("InvoiceNo")).alias("complex_map"))
+      .selectExpr("complex_map['Description']").show(5)
+
+    df.select(map(col("Description"),col("InvoiceNo")).alias("complex_map"))
+      .selectExpr("explode(complex_map)")
+      .show(5)
+
+    println("#############  Working with json ######################## ")
+    /*val jsonDF = spark.range(1)
+      .selectExpr("""
+'{"myJSONKey" : {"myJSONValue" : [1, 2, 3]}}' as jsonString
+""")
+    jsonDF.select(
+      get_json_object(col("jsonString"), "$.myJSONKey.myJSONValue[1]"
+        json_tuple(col("jsonString"), "myJSONKey"))
+        .show()*/
+
+     // df.selectExpr("(InvoiceNo,Description) as myStruct").select(to_json(col("myStruct"))).show(5)
+
+    /*val udfExampleDF=*/
+
+    println("#############  Working with UDF ######################## ")
+  val udfExampleDF=sc.range(5).toDF("num")
+    def power3(number:Double):Double={
+      number*number*number
+    }
+    power3(2.0)
+
+    val power3udf=udf(power3(_:Double):Double)
+    udfExampleDF.select(power3udf(col("num"))).show()
+
+
+
+
   }
 
 }
+
+/*OUTPUT
+root
+ |-- InvoiceNo: string (nullable = true)
+ |-- StockCode: string (nullable = true)
+ |-- Description: string (nullable = true)
+ |-- Quantity: integer (nullable = true)
+ |-- InvoiceDate: timestamp (nullable = true)
+ |-- UnitPrice: double (nullable = true)
+ |-- CustomerID: double (nullable = true)
+ |-- Country: string (nullable = true)
+
++---+----+---+
+|  5|five|5.0|
++---+----+---+
+|  5|five|5.0|
+|  5|five|5.0|
+|  5|five|5.0|
+|  5|five|5.0|
+|  5|five|5.0|
+|  5|five|5.0|
+|  5|five|5.0|
+|  5|five|5.0|
+|  5|five|5.0|
+|  5|five|5.0|
+|  5|five|5.0|
+|  5|five|5.0|
+|  5|five|5.0|
+|  5|five|5.0|
+|  5|five|5.0|
+|  5|five|5.0|
+|  5|five|5.0|
+|  5|five|5.0|
+|  5|five|5.0|
+|  5|five|5.0|
++---+----+---+
+only showing top 20 rows
+
++---------+-----------------------------------+
+|InvoiceNo|Description                        |
++---------+-----------------------------------+
+|536365   |WHITE HANGING HEART T-LIGHT HOLDER |
+|536365   |WHITE METAL LANTERN                |
+|536365   |CREAM CUPID HEARTS COAT HANGER     |
+|536365   |KNITTED UNION FLAG HOT WATER BOTTLE|
+|536365   |RED WOOLLY HOTTIE WHITE HEART.     |
++---------+-----------------------------------+
+only showing top 5 rows
+
++---------+-----------------------------------+
+|InvoiceNo|Description                        |
++---------+-----------------------------------+
+|536365   |WHITE HANGING HEART T-LIGHT HOLDER |
+|536365   |WHITE METAL LANTERN                |
+|536365   |CREAM CUPID HEARTS COAT HANGER     |
+|536365   |KNITTED UNION FLAG HOT WATER BOTTLE|
+|536365   |RED WOOLLY HOTTIE WHITE HEART.     |
++---------+-----------------------------------+
+only showing top 5 rows
+
+#############  Example 2 ######################## +---------+---------+--------------+--------+-------------------+---------+----------+--------------+
+|InvoiceNo|StockCode|   Description|Quantity|        InvoiceDate|UnitPrice|CustomerID|       Country|
++---------+---------+--------------+--------+-------------------+---------+----------+--------------+
+|   536544|      DOT|DOTCOM POSTAGE|       1|2010-12-01 14:32:00|   569.77|      null|United Kingdom|
+|   536592|      DOT|DOTCOM POSTAGE|       1|2010-12-01 17:06:00|   607.49|      null|United Kingdom|
++---------+---------+--------------+--------+-------------------+---------+----------+--------------+
+
+#############  Example 3 ######################## +---------+-----------+
+|UnitPrice|isExpensive|
++---------+-----------+
+|   569.77|       true|
+|   607.49|       true|
++---------+-----------+
+
++--------------+---------+
+|   Description|UnitPrice|
++--------------+---------+
+|DOTCOM POSTAGE|   569.77|
+|DOTCOM POSTAGE|   607.49|
++--------------+---------+
+
++---------+---------+-----------+--------+-----------+---------+----------+-------+
+|InvoiceNo|StockCode|Description|Quantity|InvoiceDate|UnitPrice|CustomerID|Country|
++---------+---------+-----------+--------+-----------+---------+----------+-------+
++---------+---------+-----------+--------+-----------+---------+----------+-------+
+
++----------+------------------+
+|CustomerId|      realQuantity|
++----------+------------------+
+|   17850.0|239.08999999999997|
+|   17850.0|          418.7156|
++----------+------------------+
+only showing top 2 rows
+
+#############  monotonically_increasing_id() ######################## +-----------------------------+
+|monotonically_increasing_id()|
++-----------------------------+
+|                            0|
+|                            1|
++-----------------------------+
+only showing top 2 rows
+
+#############  regexp_replace ########################
++--------------------+--------------------+
+|         color_clean|         Description|
++--------------------+--------------------+
+|COLOR HANGING HEA...|WHITE HANGING HEA...|
+| COLOR METAL LANTERN| WHITE METAL LANTERN|
++--------------------+--------------------+
+only showing top 2 rows
+
+#############  translate ########################
++----------------------------------+--------------------+
+|translate(Description, LEET, 1337)|         Description|
++----------------------------------+--------------------+
+|              WHI73 HANGING H3A...|WHITE HANGING HEA...|
+|               WHI73 M37A1 1AN73RN| WHITE METAL LANTERN|
++----------------------------------+--------------------+
+only showing top 2 rows
+
+#############  regex_extract ########################
++-----------+----------------------------------+
+|color_clean|Description                       |
++-----------+----------------------------------+
+|WHITE      |WHITE HANGING HEART T-LIGHT HOLDER|
+|WHITE      |WHITE METAL LANTERN               |
++-----------+----------------------------------+
+only showing top 2 rows
+
+#############  drop ########################
++---------+---------+--------------------+--------+-------------------+---------+----------+--------------+
+|InvoiceNo|StockCode|         Description|Quantity|        InvoiceDate|UnitPrice|CustomerID|       Country|
++---------+---------+--------------------+--------+-------------------+---------+----------+--------------+
+|   536365|   85123A|WHITE HANGING HEA...|       6|2010-12-01 08:26:00|     2.55|   17850.0|United Kingdom|
+|   536365|    71053| WHITE METAL LANTERN|       6|2010-12-01 08:26:00|     3.39|   17850.0|United Kingdom|
+|   536365|   84406B|CREAM CUPID HEART...|       8|2010-12-01 08:26:00|     2.75|   17850.0|United Kingdom|
+|   536365|   84029G|KNITTED UNION FLA...|       6|2010-12-01 08:26:00|     3.39|   17850.0|United Kingdom|
+|   536365|   84029E|RED WOOLLY HOTTIE...|       6|2010-12-01 08:26:00|     3.39|   17850.0|United Kingdom|
+|   536365|    22752|SET 7 BABUSHKA NE...|       2|2010-12-01 08:26:00|     7.65|   17850.0|United Kingdom|
+|   536365|    21730|GLASS STAR FROSTE...|       6|2010-12-01 08:26:00|     4.25|   17850.0|United Kingdom|
+|   536366|    22633|HAND WARMER UNION...|       6|2010-12-01 08:28:00|     1.85|   17850.0|United Kingdom|
+|   536366|    22632|HAND WARMER RED P...|       6|2010-12-01 08:28:00|     1.85|   17850.0|United Kingdom|
+|   536367|    84879|ASSORTED COLOUR B...|      32|2010-12-01 08:34:00|     1.69|   13047.0|United Kingdom|
+|   536367|    22745|POPPY'S PLAYHOUSE...|       6|2010-12-01 08:34:00|      2.1|   13047.0|United Kingdom|
+|   536367|    22748|POPPY'S PLAYHOUSE...|       6|2010-12-01 08:34:00|      2.1|   13047.0|United Kingdom|
+|   536367|    22749|FELTCRAFT PRINCES...|       8|2010-12-01 08:34:00|     3.75|   13047.0|United Kingdom|
+|   536367|    22310|IVORY KNITTED MUG...|       6|2010-12-01 08:34:00|     1.65|   13047.0|United Kingdom|
+|   536367|    84969|BOX OF 6 ASSORTED...|       6|2010-12-01 08:34:00|     4.25|   13047.0|United Kingdom|
+|   536367|    22623|BOX OF VINTAGE JI...|       3|2010-12-01 08:34:00|     4.95|   13047.0|United Kingdom|
+|   536367|    22622|BOX OF VINTAGE AL...|       2|2010-12-01 08:34:00|     9.95|   13047.0|United Kingdom|
+|   536367|    21754|HOME BUILDING BLO...|       3|2010-12-01 08:34:00|     5.95|   13047.0|United Kingdom|
+|   536367|    21755|LOVE BUILDING BLO...|       3|2010-12-01 08:34:00|     5.95|   13047.0|United Kingdom|
+|   536367|    21777|RECIPE BOX WITH M...|       4|2010-12-01 08:34:00|     7.95|   13047.0|United Kingdom|
++---------+---------+--------------------+--------+-------------------+---------+----------+--------------+
+only showing top 20 rows
+
+#############  fill ########################
++---------+---------+--------------------+--------+-------------------+---------+----------+--------------+
+|InvoiceNo|StockCode|         Description|Quantity|        InvoiceDate|UnitPrice|CustomerID|       Country|
++---------+---------+--------------------+--------+-------------------+---------+----------+--------------+
+|   536365|   85123A|WHITE HANGING HEA...|       6|2010-12-01 08:26:00|     2.55|   17850.0|United Kingdom|
+|   536365|    71053| WHITE METAL LANTERN|       6|2010-12-01 08:26:00|     3.39|   17850.0|United Kingdom|
+|   536365|   84406B|CREAM CUPID HEART...|       8|2010-12-01 08:26:00|     2.75|   17850.0|United Kingdom|
+|   536365|   84029G|KNITTED UNION FLA...|       6|2010-12-01 08:26:00|     3.39|   17850.0|United Kingdom|
+|   536365|   84029E|RED WOOLLY HOTTIE...|       6|2010-12-01 08:26:00|     3.39|   17850.0|United Kingdom|
+|   536365|    22752|SET 7 BABUSHKA NE...|       2|2010-12-01 08:26:00|     7.65|   17850.0|United Kingdom|
+|   536365|    21730|GLASS STAR FROSTE...|       6|2010-12-01 08:26:00|     4.25|   17850.0|United Kingdom|
+|   536366|    22633|HAND WARMER UNION...|       6|2010-12-01 08:28:00|     1.85|   17850.0|United Kingdom|
+|   536366|    22632|HAND WARMER RED P...|       6|2010-12-01 08:28:00|     1.85|   17850.0|United Kingdom|
+|   536367|    84879|ASSORTED COLOUR B...|      32|2010-12-01 08:34:00|     1.69|   13047.0|United Kingdom|
+|   536367|    22745|POPPY'S PLAYHOUSE...|       6|2010-12-01 08:34:00|      2.1|   13047.0|United Kingdom|
+|   536367|    22748|POPPY'S PLAYHOUSE...|       6|2010-12-01 08:34:00|      2.1|   13047.0|United Kingdom|
+|   536367|    22749|FELTCRAFT PRINCES...|       8|2010-12-01 08:34:00|     3.75|   13047.0|United Kingdom|
+|   536367|    22310|IVORY KNITTED MUG...|       6|2010-12-01 08:34:00|     1.65|   13047.0|United Kingdom|
+|   536367|    84969|BOX OF 6 ASSORTED...|       6|2010-12-01 08:34:00|     4.25|   13047.0|United Kingdom|
+|   536367|    22623|BOX OF VINTAGE JI...|       3|2010-12-01 08:34:00|     4.95|   13047.0|United Kingdom|
+|   536367|    22622|BOX OF VINTAGE AL...|       2|2010-12-01 08:34:00|     9.95|   13047.0|United Kingdom|
+|   536367|    21754|HOME BUILDING BLO...|       3|2010-12-01 08:34:00|     5.95|   13047.0|United Kingdom|
+|   536367|    21755|LOVE BUILDING BLO...|       3|2010-12-01 08:34:00|     5.95|   13047.0|United Kingdom|
+|   536367|    21777|RECIPE BOX WITH M...|       4|2010-12-01 08:34:00|     7.95|   13047.0|United Kingdom|
++---------+---------+--------------------+--------+-------------------+---------+----------+--------------+
+only showing top 20 rows
+
+#############  replace ########################
++---------+---------+--------------------+--------+-------------------+---------+----------+--------------+
+|InvoiceNo|StockCode|         Description|Quantity|        InvoiceDate|UnitPrice|CustomerID|       Country|
++---------+---------+--------------------+--------+-------------------+---------+----------+--------------+
+|   536365|   85123A|WHITE HANGING HEA...|       6|2010-12-01 08:26:00|     2.55|   17850.0|United Kingdom|
+|   536365|    71053| WHITE METAL LANTERN|       6|2010-12-01 08:26:00|     3.39|   17850.0|United Kingdom|
+|   536365|   84406B|CREAM CUPID HEART...|       8|2010-12-01 08:26:00|     2.75|   17850.0|United Kingdom|
+|   536365|   84029G|KNITTED UNION FLA...|       6|2010-12-01 08:26:00|     3.39|   17850.0|United Kingdom|
+|   536365|   84029E|RED WOOLLY HOTTIE...|       6|2010-12-01 08:26:00|     3.39|   17850.0|United Kingdom|
+|   536365|    22752|SET 7 BABUSHKA NE...|       2|2010-12-01 08:26:00|     7.65|   17850.0|United Kingdom|
+|   536365|    21730|GLASS STAR FROSTE...|       6|2010-12-01 08:26:00|     4.25|   17850.0|United Kingdom|
+|   536366|    22633|HAND WARMER UNION...|       6|2010-12-01 08:28:00|     1.85|   17850.0|United Kingdom|
+|   536366|    22632|HAND WARMER RED P...|       6|2010-12-01 08:28:00|     1.85|   17850.0|United Kingdom|
+|   536367|    84879|ASSORTED COLOUR B...|      32|2010-12-01 08:34:00|     1.69|   13047.0|United Kingdom|
+|   536367|    22745|POPPY'S PLAYHOUSE...|       6|2010-12-01 08:34:00|      2.1|   13047.0|United Kingdom|
+|   536367|    22748|POPPY'S PLAYHOUSE...|       6|2010-12-01 08:34:00|      2.1|   13047.0|United Kingdom|
+|   536367|    22749|FELTCRAFT PRINCES...|       8|2010-12-01 08:34:00|     3.75|   13047.0|United Kingdom|
+|   536367|    22310|IVORY KNITTED MUG...|       6|2010-12-01 08:34:00|     1.65|   13047.0|United Kingdom|
+|   536367|    84969|BOX OF 6 ASSORTED...|       6|2010-12-01 08:34:00|     4.25|   13047.0|United Kingdom|
+|   536367|    22623|BOX OF VINTAGE JI...|       3|2010-12-01 08:34:00|     4.95|   13047.0|United Kingdom|
+|   536367|    22622|BOX OF VINTAGE AL...|       2|2010-12-01 08:34:00|     9.95|   13047.0|United Kingdom|
+|   536367|    21754|HOME BUILDING BLO...|       3|2010-12-01 08:34:00|     5.95|   13047.0|United Kingdom|
+|   536367|    21755|LOVE BUILDING BLO...|       3|2010-12-01 08:34:00|     5.95|   13047.0|United Kingdom|
+|   536367|    21777|RECIPE BOX WITH M...|       4|2010-12-01 08:34:00|     7.95|   13047.0|United Kingdom|
++---------+---------+--------------------+--------+-------------------+---------+----------+--------------+
+only showing top 20 rows
+
+#############  working with complex Types ########################
+root
+ |-- complex: struct (nullable = false)
+ |    |-- Description: string (nullable = true)
+ |    |-- InvoiceNo: string (nullable = true)
+
++-----------------------------------+
+|complex.Description                |
++-----------------------------------+
+|WHITE HANGING HEART T-LIGHT HOLDER |
+|WHITE METAL LANTERN                |
+|CREAM CUPID HEARTS COAT HANGER     |
+|KNITTED UNION FLAG HOT WATER BOTTLE|
+|RED WOOLLY HOTTIE WHITE HEART.     |
++-----------------------------------+
+only showing top 5 rows
+
++--------------------+---------+
+|         Description|InvoiceNo|
++--------------------+---------+
+|WHITE HANGING HEA...|   536365|
+| WHITE METAL LANTERN|   536365|
+|CREAM CUPID HEART...|   536365|
+|KNITTED UNION FLA...|   536365|
+|RED WOOLLY HOTTIE...|   536365|
++--------------------+---------+
+only showing top 5 rows
+
+#############  working with Arrays Types ########################
++----------------------------------------+
+|split(Description,  )                   |
++----------------------------------------+
+|[WHITE, HANGING, HEART, T-LIGHT, HOLDER]|
+|[WHITE, METAL, LANTERN]                 |
++----------------------------------------+
+only showing top 2 rows
+
++------------+
+|array_col[0]|
++------------+
+|WHITE       |
+|WHITE       |
++------------+
+only showing top 2 rows
+
++---------------------------+
+|size(split(Description,  ))|
++---------------------------+
+|                          5|
+|                          3|
++---------------------------+
+only showing top 2 rows
+
+#############  Arrays Contains ########################
++--------------------------------------------+
+|array_contains(split(Description,  ), WHITE)|
++--------------------------------------------+
+|                                        true|
+|                                        true|
++--------------------------------------------+
+only showing top 2 rows
+
+#############  Explode ########################
++--------------------+---------+--------------------+--------+
+|         Description|InvoiceNo|            splitted|exploded|
++--------------------+---------+--------------------+--------+
+|WHITE HANGING HEA...|   536365|[WHITE, HANGING, ...|   WHITE|
+|WHITE HANGING HEA...|   536365|[WHITE, HANGING, ...| HANGING|
++--------------------+---------+--------------------+--------+
+only showing top 2 rows
+
+#############  Map ########################
++------------------------+
+|complex_map[Description]|
++------------------------+
+|                    null|
+|                    null|
+|                    null|
+|                    null|
+|                    null|
++------------------------+
+only showing top 5 rows
+
++--------------------+------+
+|                 key| value|
++--------------------+------+
+|WHITE HANGING HEA...|536365|
+| WHITE METAL LANTERN|536365|
+|CREAM CUPID HEART...|536365|
+|KNITTED UNION FLA...|536365|
+|RED WOOLLY HOTTIE...|536365|
++--------------------+------+
+only showing top 5 rows
+
+#############  Working with json ########################
++--------+
+|UDF(num)|
++--------+
+|     0.0|
+|     1.0|
+|     8.0|
+|    27.0|
+|    64.0|
++--------+
+
+
+
+ */
