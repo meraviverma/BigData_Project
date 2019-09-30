@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3fd77aad-808f-4b3a-b0fc-127c083ca30c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter6/Chapter6$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter6/Chapter6$$anonfun$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter6/Chapter6$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter6/Chapter6$$anonfun$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter6/Chapter6$$anonfun$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter6/Chapter6$$anonfun$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter6/Chapter6$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter6/Chapter6$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/SparkDefGuide/Chapter7/Chapter7.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/SparkDefGuide/Chapter7/Chapter7.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,18 +25,19 @@
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.57" value="1" />
           <entry key="project.open.time.58" value="1" />
           <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.89" value="1" />
           <entry key="project.open.time.91" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="2" />
           <entry key="oracle" value="75" />
-          <entry key="scala" value="11313" />
+          <entry key="scala" value="11792" />
           <entry key="xml" value="14" />
         </counts>
       </usages-collector>
@@ -47,7 +45,7 @@
         <counts>
           <entry key="JSON" value="2" />
           <entry key="PLAIN_TEXT" value="75" />
-          <entry key="Scala" value="11313" />
+          <entry key="Scala" value="11792" />
           <entry key="XML" value="14" />
         </counts>
       </usages-collector>
@@ -57,7 +55,7 @@
           <entry key="csv" value="4" />
           <entry key="json" value="6" />
           <entry key="oracle" value="1" />
-          <entry key="scala" value="25" />
+          <entry key="scala" value="26" />
           <entry key="txt" value="5" />
         </counts>
       </usages-collector>
@@ -67,7 +65,7 @@
           <entry key="CSV" value="4" />
           <entry key="JSON" value="6" />
           <entry key="PLAIN_TEXT" value="6" />
-          <entry key="Scala" value="25" />
+          <entry key="Scala" value="26" />
         </counts>
       </usages-collector>
     </session>
@@ -122,11 +120,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/SparkDefGuide/Chapter7/Chapter7.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-771">
-              <caret line="34" column="20" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+            <state relative-caret-position="211">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
               <folding>
                 <element signature="e#32#62#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.3.1/spark-sql_2.11-2.3.1-sources.jar!/org/apache/spark/sql/expressions/Window.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-21">
+              <caret line="109" column="6" selection-start-line="109" selection-start-column="6" selection-end-line="109" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -211,7 +218,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -225,8 +232,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -262,10 +267,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569066055454" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569840716522" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -386,10 +393,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19591528" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19364598" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -398,7 +405,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3715221" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3715221" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -616,12 +623,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data-sparkguide/2010-12-01.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/data-sparkguide/2015-summary.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -646,10 +647,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data-sparkguide/2010-12-01.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.3.1/spark-sql_2.11-2.3.1-sources.jar!/org/apache/spark/sql/expressions/Window.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-21">
+          <caret line="109" column="6" selection-start-line="109" selection-start-column="6" selection-end-line="109" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/SparkDefGuide/Chapter7/Chapter7.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-771">
-          <caret line="34" column="20" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+        <state relative-caret-position="211">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
           <folding>
             <element signature="e#32#62#0" expanded="true" />
           </folding>
