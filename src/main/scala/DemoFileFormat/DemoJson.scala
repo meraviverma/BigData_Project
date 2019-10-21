@@ -31,6 +31,8 @@ object DemoJson {
     Use read.option("multiline","true")
     */
 
+    
+
     val student_detail =sc.read.option("multiline","true").json("D:\\mypro\\spark\\student_detai.json")
 
 
