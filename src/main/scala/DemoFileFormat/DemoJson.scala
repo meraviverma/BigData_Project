@@ -31,7 +31,7 @@ object DemoJson {
     Use read.option("multiline","true")
     */
 
-    
+
 
     val student_detail =sc.read.option("multiline","true").json("D:\\mypro\\spark\\student_detai.json")
 
@@ -46,6 +46,9 @@ object DemoJson {
     add.show()
 
 
+    student.write.format("com.databricks.spark.avro").save("D:\\mypro\\spark\\avro-data")
+
+    //student.write.avro("D:\\mypro\\spark\\avro-data")
    /* Flattening structs
       A star (*) can be used to select all of the subfields in a struct.*/
 
@@ -57,7 +60,7 @@ object DemoJson {
     dfNumber1.show()
 
     student.createOrReplaceTempView("student")
-    sc.sql("select explode(phoneNumbers) from student").show()
+    ///sc.sql("select explode(phoneNumbers) from student").show()
 
     /* OUTPUT
 
