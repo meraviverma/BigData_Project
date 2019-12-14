@@ -1,0 +1,256 @@
+						----------------------------------------------------
+												AVRO
+						-----------------------------------------------------
+
+https://acadgild.com/blog/avro-hive
+https://acadgild.com/blog/apache-hive-file-formats
+
+What is Avro?
+----------------
+Avro acts as a data serialize and DE-serialize framework
+
+Avro is one of the preferred data serialization systems because of its language neutrality.
+Avro is also very much preferred for serializing the data in Hadoop.
+
+It uses JSON for defining data types and protocols and serializes data in a compact binary format. Its primary use is in
+Apache Hadoop, where it can provide both a serialization format for persistent data, and a wire format for communication
+between Hadoop nodes, and from client programs to the Hadoop services.
+
+What is Avro?
+Avro is a RPC(Remote procedure call) and a data serialization framework developed along with hadoop.Avro is also very
+much preferred for serializing the data in Big data frameworks.
+
+It uses JSON(Java script Object Notation) for defining the data types, protocols and serializes the data in a compact
+binary format.
+Its primary use is in Hadoop and Spark. Here it can provide both a serialization format for persistent data, and a wire
+format for the need of communication between Hadoop nodes, and from the client programs to the Hadoop services.
+Avro purely relies on a schema. When Avro data is read, the schema that is used for writing it is always present.
+
+When Avro data is stored in a file, its schema is also stored with it, so that files may be processed later by any program.
+
+
+
+Avro Schema
+--------------
+Avro relies on a schema. When Avro data is read, the schema used for writing it is always present.
+
+When Avro data is stored in a file, its schema is stored with it, so that files may be processed later by any program.
+
+Avro has its own parser to return the provided schema as an object.
+
+
+Avro stores both the data definition and the data together in one message or file.
+
+Avro stores the data definition in JSON format making it easy to read and interpret; the data itself is stored in binary
+format making it compact and efficient.
+
+create table olympic_avro
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.literal'='{
+"name": "my_record",
+"type": "record",
+"fields": [
+{"name":"athelete", "type":"string"},
+{"name":"age", "type":"int"},
+{"name":"country", "type":"string"},
+{"name":"year", "type":"string"},
+{"name":"closing", "type":"string"},
+{"name":"sport", "type":"string"},
+{"name":"gold", "type":"int"},
+{"name":"silver", "type":"int"},
+{"name":"bronze", "type":"int"},
+{"name":"total", "type":"int"}
+]}');
+
+
+1. If we have a file with extension ‘.avro’ and the schema of the file is the same as what you specified, then you can
+directly import the file using the command
+
+LOAD DATA LOCAL  INPATH  'PATH OF THE FILE';
+
+2.
+create tableolympic(athelete STRING,age INT,country STRING,year STRING,closing STRING,sport STRING,gold INT,
+silver INT,bronze INT,total INT) row format delimited fields terminated by '\t' stored as textfile;
+
+load data local inpath ‘path of your file in local’ into table olympic;
+
+insert overwrite table olympic_avro select * from olympic limit 20;
+
+This olympic data has some NULL values and the Avro schema cannot handle the null values by default. To make the
+Avro table work with NULL values, the schema of the table needs to be changed.
+
+Handling NULL Values in Avro Table:
+Like mentioned earlier, the schema of the table needs to be changed to make the table accept NULL values as well.
+In this case,the schema will be as shown below:
+
+create table olympic_avro1
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.literal'='{
+"namespace":"com.example.avro",
+"name": "my_record",
+"type": "record",
+"fields": [
+{"name":"athelete", "type":["string","null"],"default":null},
+{"name":"age", "type":["int","null"],"default":0},
+{"name":"country", "type":["string","null"],"default":null},
+{"name":"year", "type":["string","null"],"default":null},
+{"name":"closing", "type":["string","null"],"default":null},
+{"name":"sport", "type":["string","null"],"default":null},
+{"name":"gold", "type":["int","null"],"default":0},
+{"name":"silver", "type":["int","null"],"default":0},
+{"name":"bronze", "type":["int","null"],"default":0},
+{"name":"total", "type":["int","null"],"default":0}
+]}');
+
+The difference between the normal Avro schema and the above-specified schema is as follows:
+In the type in above code, we have given two values, one is the data type and the other is null, which means that if
+the value is the specified data type, it accepts the value, else, the value is NULL. It will consider the default value
+which we have given with attribute default.Here we have given the default value as null for string and 0(Zero) for int.
+
+insert overwrite table olympic_avro1 select * from olympic
+
+Converting Avro to JSON
+----------------------------
+To convert the Avro file into JSON we need to download a jar file called
+‘avro-tools-1.7.5 jar’, which contains the option to convert the Avro file into JSON. You can download the jar file
+from the following link
+avro-tools-1.7.5 jar
+
+This jar file will also be downloaded in the ‘Downloads’ folder. From the terminal move to the ‘Downloads’ folder and
+then type the command with below syntax.
+
+java -jar avro-tools-1.7.5.jar tojson 'avro file name' >newfilename.json
+In our case the command will be as follows:
+
+java -jar avro-tools-1.7.5.jar tojson 000000_0.avro >olympic.json
+
+LOAD DATA LOCAL INPATH '/path of the file' into table olympic_avro2
+
+Avro with spark
+------------------
+val df = sqlContext.read.format("com.databricks.spark.avro").load("file:///home/kiran/Documents/000000_0.avro")
+
+val dataavro=sc.read.format("com.databricks.spark.avro").load("D:\\mypro\\spark\\part-00000-avro-data.avro")
+dataavro.printSchema()
+
+dataavro.show()
+
+						----------------------------------------------------
+												PARQUET
+						-----------------------------------------------------
+https://acadgild.com/blog/parquet-file-format-hadoop
+
+parquet acts as a columnar storage so as to store the records in an optimized way.
+Parquet, an open source file format for Hadoop. Parquet stores nested data structures in a flat columnar format.
+Parquet stores binary data in a column-oriented way, where the values of each column are organized so that they are
+all adjacent, enabling better compression.
+
+Parquet stores nested data structures in a flat columnar format. Compared to any traditional approach where the data
+is stored in a row-oriented format, Parquet is more efficient in the terms of performance and storage.
+
+Parquet stores the binary data in a column-oriented way, where the values of each and every column are organized so
+that all the columns are adjacent, enabling better compression rate.
+
+To work on Parquet files, we do not need to download any external jar files. Spark by default has provided support for
+ Parquet files.
+
+Advantages of using Parquet::
+There are several advantages to columnar formats.
+
+a)Organizing by column allows for better compression, as data is more homogeneous. The space savings are very noticeable
+at the scale of a Hadoop cluster.
+b)I/O will be reduced as we can efficiently scan only a subset of the columns while reading the data. Better compression
+also reduces the bandwidth required to read the input.
+c)As we store data of the same type in each column, we can use encoding better suited to the modern processors’ pipeline
+by making instruction branching more predictable.
+
+						----------------------------------------------------
+											SEQUENCEFILE
+						-----------------------------------------------------
+Sequence files act as a container to store the small files.
+Sequence files are flat files consisting of binary key-value pairs.
+
+Sequence files are in the binary format which can be split and the main use of these files is to club two or more
+smaller files and make them as a one sequence file.
+
+There are three types of sequence files:
+• Uncompressed key/value records.
+• Record compressed key/value records – only ‘values’ are compressed here
+• Block compressed key/value records – both keys and values are collected in ‘blocks’ separately and compressed.
+The size of the ‘block’ is configurable.
+
+Hive has its own SEQUENCEFILE reader and SEQUENCEFILE writer libraries for reading and writing through sequence files.
+
+create table table_name (schema of the table) row format delimited fileds terminated by ',' | stored as SEQUENCEFILE
+
+Hive uses the SEQUENCEFILE input and output formats from the following packages:
+
+org.apache.hadoop.mapred.SequenceFileInputFormat
+org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat
+
+create table olympic_sequencefile(athelete STRING,age INT,country STRING,year STRING,closing STRING,sport STRING,
+gold INT,silver INT,bronze INT,total INT) row format delimited fields terminated by '\t' stored as sequencefile
+
+
+						----------------------------------------------------
+											RCFILE
+						-----------------------------------------------------
+
+RCFILE stands of Record Columnar File which is another type of binary file format which offers high compression rate
+on the top of the rows.
+RCFILE is used when we want to perform operations on multiple rows at a time.
+RCFILEs are flat files consisting of binary key/value pairs, which shares many similarities with SEQUENCEFILE.
+
+RCFILE stores columns of a table in form of record in a columnar manner.
+
+It first partitions rows horizontally into row splits and then it vertically partitions each row split in a columnar way.
+RCFILE first stores the metadata of a row split, as the key part of a record, and all the data of a row split as the
+value part. This means that RCFILE encourages column oriented storage rather than row oriented storage.
+This column oriented storage is very useful while performing analytics. It is easy to perform analytics when we “hive’
+a column oriented storage type.
+Facebook uses RCFILE as its default file format for storing of data in their data warehouse as they perform different
+types of analytics using Hive.
+
+create table table_name (schema of the table) row format delimited fields terminated by ',' | stored as RCFILE
+
+Hive has its own RCFILE Input format and RCFILE output format in its default package:
+
+org.apache.hadoop.hive.ql.io.RCFileInputFormat
+org.apache.hadoop.hive.ql.io.RCFileOutputFormat
+
+create table olympic_rcfile(athelete STRING,age INT,country STRING,year STRING,closing STRING,sport STRING,gold INT,
+silver INT,bronze INT,total INT) row format delimited fields terminated by '\t' stored as rcfile
+
+
+						----------------------------------------------------
+											ORCFILE
+						-----------------------------------------------------
+ORC stands for Optimized Row Columnar which means it can store data in an optimized way than the other file formats.
+ORC reduces the size of the original data up to 75%(eg: 100GB file will become 25GB). As a result the speed of data
+processing also increases. ORC shows better performance than Text, Sequence and RC file formats.
+An ORC file contains rows data in groups called as Stripes along with a file footer. ORC format improves the performance
+when Hive is processing the data.
+
+create table table_name (schema of the table) row format delimited fields terminated by ',' | stored as ORC
+
+Hive has its own ORCFILE Input format and ORCFILE output format in its default package:
+
+ org.apache.hadoop.hive.ql.io.orc
+
+create table olympic_orcfile(athelete STRING,age INT,country STRING,year STRING,closing STRING,sport STRING,gold INT,
+silver INT,bronze INT,total INT) row format delimited fields terminated by '\t' stored as orcfile;
+
+Thus you can use the above four file formats depending on your data.
+----------------------------------------------------------------------
+For example,
+
+If your data is delimited by some parameters then you can use TEXTFILE format.
+If your data is in small files whose size is less than the block size then you can use SEQUENCEFILE format.
+If you want to perform analytics on your data and you want to store your data efficiently for that then you can use
+RCFILE format.
+If you want to store your data in an optimized way which lessens your storage and increases your performance then you
+can use ORCFILE format.
