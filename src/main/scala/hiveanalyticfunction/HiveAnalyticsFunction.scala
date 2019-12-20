@@ -40,5 +40,27 @@ object HiveAnalyticsFunction {
 
     sc.sql("select salesid, qty," +
       "count(*) over (order by salesid rows unbounded preceding) as count from winsales order by salesid").show()
+
+    //Show the sales ID, quantity, and count of non-null rows from the beginning of the data window.
+    // (In the WINSALES table, the QTY_SHIPPED column contains some NULLs.)
+
+    sc.sql("select salesid, qty, qty_shipped," +
+      "count(qty_shipped) over (order by salesid rows unbounded preceding) as count from winsales order by salesid").show()
+
+    //CUME_DIST Window Function Examples
+    sc.sql("select sellerid, qty, cume_dist() over (partition by sellerid order by qty) as cume_dist from winsales").show()
+
+
+    //Dense Ranking with ORDER BY
+    sc.sql("select salesid, qty," +
+      "dense_rank() over(order by qty desc) as d_rnk," +
+      "rank() over(order by qty desc) as rnk " +
+      "from winsales order by 2,1").show()
+
+    //Dense Ranking with PARTITION BY and ORDER BY
+    sc.sql("select salesid, sellerid, qty," +
+      "dense_rank() over(partition by sellerid order by qty desc) as d_rnk " +
+      "from winsales order by 2,1,3").show()
+
   }
 }
