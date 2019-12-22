@@ -180,52 +180,98 @@ object Transformation_Actions extends SparkConfiguration {
     println(x_reduce.collect.mkString(", "))
     println(y_reduce)
 
+    println(" ############# AGGREGATE ##################")
+    /*Aggregate all the elements of the RDD by:
+      - applying a user function to combine elements with user-supplied objects,
+    - then combining those user-defined results via a second user function,
+    - and finally returning a result to the driver*/
+    //([], 0) ([1], 1) ([2], 2)([1,2], 3)
+    //([3], 3)([4], 4)([3,4], 7) ([1,2,3,4], 10)
+    def seqOp = (data:(Array[Int], Int), item:Int) =>
+      (data._1 :+ item, data._2 + item)
+    def combOp = (d1:(Array[Int], Int), d2:(Array[Int], Int)) =>
+      (d1._1.union(d2._1), d1._2 + d2._2)
+    val x = sc.sparkContext.parallelize(Array(1,2,3,4))
+    val y = x.aggregate((Array[Int](), 0))(seqOp, combOp)
+    println(y.toString())
+
+    println(" ############# MAX ##################")
+    val x_max = sc.sparkContext.parallelize(Array(2,4,1))
+    val y_max = x_max.max
+    println(x_max.collect().mkString(", "))
+    println(y_max)
+
+    println("################# SUM #################")
+    val x_sum = sc.sparkContext.parallelize(Array(2,4,1))
+    val y_sum = x_sum.sum
+    println(x_sum.collect().mkString(", "))
+    println(y_sum)
+
+    println("################# COUNTBYKEY #################")
+    //Return a map of keys and counts of their occurrences in the RDD
+    val x_countbykey = sc.sparkContext.parallelize(Array(('J',"James"),('F',"Fred"),
+      ('A',"Anna"),('J',"John")))
+    val y_countbykey = x_countbykey.countByKey()
+    println(y_countbykey)
+
 
 //OUTPUT
-    /*######### MAP #################
-    a,b,c
-    (a,1),(b,1),(c,1)
-    ############# FILTER ##############
-    1,2,3
-    1,3
-    ############### FLATMAP ###############
-    1,2,3
-    1,100,42,2,200,42,3,300,42
-    ############ GROUPBY ###################
-    (s,CompactBuffer(steve)),(f,CompactBuffer(freed)),(j,CompactBuffer(james)),(r,CompactBuffer(ram))
-    ############# GROUPBYKEY #################
-    (B,CompactBuffer(5, 4)),(A,CompactBuffer(3, 2, 1))
-    ############### REDUCEBYKEY VS GROUPBYKEY ###############
-    (two,2),(one,1),(three,3)
-    (two,2),(one,1),(three,3)
-    ############ MAPPARTITIONS ################
-    1,2,3
-    1,42,5,42
-    ################## MAPPARTITIONSWITHINDEX #######################
-      [I@4bbb49b0,[I@f096f37
-      [Ljava.lang.Object;@3effd4f3,[Ljava.lang.Object;@41f4fe5
-      ########## SAMPLE ################
-    1
-    ################# UNION ############
-    1,2,3,3,4
-    ################## JOIN ###############
-    (a,(1,3)), (a,(1,4)), (b,(2,5))
-    ################### DISTINCT #################
-    4, 1, 3, 2
-    ################# COALSECE ########################
-      [I@7a7cc52c, [I@5853495b, [I@524a2ffb
-      [I@2f61d591 ,[I@332820f4
-    ######################## KEYBY ###################
-    (J,John), (F,Fred), (A,Anna), (J,James)
-    ###################### PARTITION BY #########################
-    [Lscala.Tuple2;@6c15e8c7,[Lscala.Tuple2;@56380231
-    ################# ZIP ##################
-    (1,1), (2,4), (3,9)
-    ############### GETNUMPARTITIONS #################
-    ParallelCollectionRDD[49] at parallelize at Transformation_Actions.scala:172
-    ############# REDUCE ##################
-    1, 2, 3, 4
-    10*/
+    /*########## MAP #################
+a,b,c
+(a,1),(b,1),(c,1)
+############# FILTER ##############
+1,2,3
+1,3
+############### FLATMAP ###############
+1,2,3
+1,100,42,2,200,42,3,300,42
+############ GROUPBY ###################
+(s,CompactBuffer(steve)),(f,CompactBuffer(freed)),(j,CompactBuffer(james)),(r,CompactBuffer(ram))
+############# GROUPBYKEY #################
+(B,CompactBuffer(5, 4)),(A,CompactBuffer(3, 2, 1))
+############### REDUCEBYKEY VS GROUPBYKEY ###############
+(two,2),(one,1),(three,3)
+(two,2),(one,1),(three,3)
+############ MAPPARTITIONS ################
+1,2,3
+1,42,5,42
+################## MAPPARTITIONSWITHINDEX #######################
+[I@4bbb49b0,[I@f096f37
+[Ljava.lang.Object;@3effd4f3,[Ljava.lang.Object;@41f4fe5
+########## SAMPLE ################
+2
+################# UNION ############
+1,2,3,3,4
+################## JOIN ###############
+(a,(1,3)), (a,(1,4)), (b,(2,5))
+################### DISTINCT #################
+4, 1, 3, 2
+################# COALSECE ########################
+[I@7a7cc52c, [I@5853495b, [I@524a2ffb
+[I@2f61d591 ,[I@332820f4
+######################## KEYBY ###################
+(J,John), (F,Fred), (A,Anna), (J,James)
+ ###################### PARTITION BY #########################
+[Lscala.Tuple2;@6c15e8c7,[Lscala.Tuple2;@56380231
+################# ZIP ##################
+(1,1), (2,4), (3,9)
+ ############### GETNUMPARTITIONS #################
+[[I@684b31de
+ ############# REDUCE ##################
+1, 2, 3, 4
+10
+ ############# AGGREGATE ##################
+([I@496a31da,10)
+ ############# MAX ##################
+2, 4, 1
+4
+################# SUM #################
+2, 4, 1
+7.0
+################# COUNTBYKEY #################
+Map(A -> 1, J -> 2, F -> 1)
+
+*/
 
 
 
