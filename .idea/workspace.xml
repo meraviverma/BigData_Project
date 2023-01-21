@@ -434,6 +434,26 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="724" y="430" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1674323970787" />
+    <state x="585" y="110" key="CommitChangelistDialog2" timestamp="1674324154324">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="585" y="110" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1674324154324" />
+    <state width="1877" height="333" key="GridCell.Tab.0.bottom" timestamp="1674324143691">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1877" height="333" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1674324143691" />
+    <state width="1877" height="333" key="GridCell.Tab.0.center" timestamp="1674324143691">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1877" height="333" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1674324143691" />
+    <state width="1877" height="333" key="GridCell.Tab.0.left" timestamp="1674324143691">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1877" height="333" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1674324143691" />
+    <state width="1877" height="333" key="GridCell.Tab.0.right" timestamp="1674324143691">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1877" height="333" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1674324143691" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.3.1/spark-sql_2.11-2.3.1.jar!/org/apache/spark/sql/DataFrameReader.class">
