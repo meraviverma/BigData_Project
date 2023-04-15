@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3fd77aad-808f-4b3a-b0fc-127c083ca30c" name="Default Changelist" comment="" />
+    <list default="true" id="3fd77aad-808f-4b3a-b0fc-127c083ca30c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Demo1/WordCount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Demo1/WordCount.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/conf/SparkConfiguration.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/conf/SparkConfiguration.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Demo1/WordCount$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Demo1/WordCount$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/conf/SparkConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/conf/SparkConfiguration.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,8 +31,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="2Ke90sNcCUNT7QCFX6DCWovmq7I" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -29,18 +50,22 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577005104598" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Mappings&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\mypro\spark" />
@@ -48,12 +73,12 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.WordCount">
-    <configuration name="DemoAvro" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="DemoFileFormat.DemoAvro" />
-      <module name="spark" />
+    <configuration name="Chapter2" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="SparkDefGuide.chapter2.Chapter2" />
+      <module name="SparkProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DemoFileFormat.*" />
+          <option name="PATTERN" value="SparkDefGuide.chapter2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,7 +127,7 @@
     </configuration>
     <configuration name="WordCount" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Demo1.WordCount" />
-      <module name="BigData_Project" />
+      <module name="SparkProject" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Demo1.*" />
@@ -114,7 +139,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.DemoAvro" />
+      <item itemvalue="Application.Chapter2" />
       <item itemvalue="Application.HiveAnalyticsFunction" />
       <item itemvalue="Application.Transformation_Actions" />
       <item itemvalue="Application.JoinDemo" />
@@ -123,13 +148,14 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.WordCount" />
+        <item itemvalue="Application.Chapter2" />
         <item itemvalue="Application.Transformation_Actions" />
         <item itemvalue="Application.JoinDemo" />
         <item itemvalue="Application.HiveAnalyticsFunction" />
-        <item itemvalue="Application.DemoAvro" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -176,36 +202,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new commit" />
     <option name="LAST_COMMIT_MESSAGE" value="new commit" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="724" y="430" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1674323970787">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="724" y="430" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1674323970787" />
-    <state x="585" y="110" key="CommitChangelistDialog2" timestamp="1674324215855">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="585" y="110" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1674324215855" />
-    <state width="1877" height="333" key="GridCell.Tab.0.bottom" timestamp="1674324143691">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="1877" height="333" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1674324143691" />
-    <state width="1877" height="333" key="GridCell.Tab.0.center" timestamp="1674324143691">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="1877" height="333" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1674324143691" />
-    <state width="1877" height="333" key="GridCell.Tab.0.left" timestamp="1674324143691">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="1877" height="333" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1674324143691" />
-    <state width="1877" height="333" key="GridCell.Tab.0.right" timestamp="1674324143691">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="1877" height="333" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1674324143691" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1674324219774">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1674324219774" />
   </component>
   <component name="masterDetails">
     <states>

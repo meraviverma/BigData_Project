@@ -3,7 +3,7 @@ package conf
 import org.apache.spark.sql.SparkSession
 
 class SparkConfiguration {
-  System.setProperty("hadoop.home.dir", "D:\\software\\winutils-master\\hadoop")
+  System.setProperty("hadoop.home.dir", "E:\\software\\winutils-master\\hadoop")
   val sc = SparkSession
     .builder()
     .appName(" first example")
