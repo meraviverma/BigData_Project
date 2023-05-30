@@ -1,0 +1,61 @@
+mysql> create database mydb
+    -> ;
+Query OK, 1 row affected (0.38 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mydb               |
+| mysql              |
+| test               |
++--------------------+
+4 rows in set (0.08 sec)
+
+mysql> use mydb;
+Database changed
+mysql> CREATE TABLE cus_tbl(
+    ->    cus_id INT NOT NULL AUTO_INCREMENT,
+    ->    cus_firstname VARCHAR(100) NOT NULL,
+    ->    cus_surname VARCHAR(100) NOT NULL,
+    ->    PRIMARY KEY ( cus_id )
+    -> );
+Query OK, 0 rows affected (1.11 sec)
+
+mysql> show tables;
++----------------+
+| Tables_in_mydb |
++----------------+
+| cus_tbl        |
++----------------+
+1 row in set (0.79 sec)
+
+mysql> describe cus_tbl;
++---------------+--------------+------+-----+---------+----------------+
+| Field         | Type         | Null | Key | Default | Extra          |
++---------------+--------------+------+-----+---------+----------------+
+| cus_id        | int(11)      | NO   | PRI | NULL    | auto_increment |
+| cus_firstname | varchar(100) | NO   |     | NULL    |                |
+| cus_surname   | varchar(100) | NO   |     | NULL    |                |
++---------------+--------------+------+-----+---------+----------------+
+3 rows in set (0.57 sec)
+
+mysql> INSERT INTO cus_tbl
+    -> (cus_id, cus_firstname, cus_surname)
+    -> VALUES
+    -> (5, 'Ajeet', 'Maurya'),
+    -> (6, 'Deepika', 'Chopra'),
+    -> (7, 'Vimal', 'Jaiswal');
+Query OK, 3 rows affected (0.52 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+mysql> select * from cus_tbl;
++--------+---------------+-------------+
+| cus_id | cus_firstname | cus_surname |
++--------+---------------+-------------+
+|      5 | Ajeet         | Maurya      |
+|      6 | Deepika       | Chopra      |
+|      7 | Vimal         | Jaiswal     |
++--------+---------------+-------------+
+3 rows in set (0.00 sec)

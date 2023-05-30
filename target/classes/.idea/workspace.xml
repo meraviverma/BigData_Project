@@ -69,13 +69,13 @@
       <recent name="D:\mypro\spark\data-sparkguide" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.KyroExample2">
-    <configuration name="KryoExample" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="src.main.scala.serializationExample.KryoExample" />
+  <component name="RunManager" selected="Application.KryoExample">
+    <configuration name="Chapter2" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="SparkDefGuide.chapter2.Chapter2" />
       <module name="SparkProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.main.scala.serializationExample.*" />
+          <option name="PATTERN" value="SparkDefGuide.chapter2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,8 +83,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KryoExample3" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="src.main.scala.serializationExample.KryoExample3" />
+    <configuration name="KryoExample" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="src.main.scala.serializationExample.KryoExample" />
       <module name="SparkProject" />
       <extension name="coverage">
         <pattern>
@@ -109,12 +109,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KyroExample2" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="src.main.scala.serializationExample.KyroExample2" />
-      <module name="SparkProject" />
+    <configuration name="Transformation_Actions" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="transformation_action.Transformation_Actions" />
+      <module name="spark" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.main.scala.serializationExample.*" />
+          <option name="PATTERN" value="transformation_action.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,18 +137,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.KryoExample" />
-      <item itemvalue="Application.KryoExample3" />
       <item itemvalue="Application.KyroExample" />
-      <item itemvalue="Application.KyroExample2" />
+      <item itemvalue="Application.Chapter2" />
+      <item itemvalue="Application.Transformation_Actions" />
       <item itemvalue="Application.WordCount" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.KyroExample2" />
-        <item itemvalue="Application.KryoExample3" />
         <item itemvalue="Application.KryoExample" />
         <item itemvalue="Application.KyroExample" />
         <item itemvalue="Application.WordCount" />
+        <item itemvalue="Application.Chapter2" />
+        <item itemvalue="Application.Transformation_Actions" />
       </list>
     </recent_temporary>
   </component>
