@@ -68,7 +68,7 @@
       <recent name="D:\mypro\spark\data-sparkguide" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.WordCount">
+  <component name="RunManager" selected="Application.DeltaTableExample">
     <configuration name="DeltaTableExample" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="src.main.scala.DeltaTableExample.DeltaTableExample" />
       <module name="SparkProject" />
@@ -84,6 +84,19 @@
     </configuration>
     <configuration name="HelloKryo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.main.scala.serializationExample.HelloKryo" />
+      <module name="SparkProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.main.scala.serializationExample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KryoExample" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="src.main.scala.serializationExample.KryoExample" />
       <module name="SparkProject" />
       <extension name="coverage">
         <pattern>
@@ -121,33 +134,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WordCount" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Demo1.WordCount" />
-      <module name="SparkProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Demo1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.WordCount" />
       <item itemvalue="Application.DeltaTableExample" />
       <item itemvalue="Application.HelloKryo" />
+      <item itemvalue="Application.KryoExample" />
       <item itemvalue="Application.KryoExample3" />
       <item itemvalue="Application.KyroExample2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.WordCount" />
         <item itemvalue="Application.DeltaTableExample" />
         <item itemvalue="Application.HelloKryo" />
         <item itemvalue="Application.KyroExample2" />
         <item itemvalue="Application.KryoExample3" />
+        <item itemvalue="Application.KryoExample" />
       </list>
     </recent_temporary>
   </component>
