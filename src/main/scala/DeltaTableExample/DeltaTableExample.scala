@@ -6,7 +6,7 @@ object DeltaTableExample {
 
   def main(args: Array[String]): Unit = {
 
-    System.setProperty("hadoop.home.dir", "E:\\software\\winutils-master\\hadoop")
+    //System.setProperty("hadoop.home.dir", "E:\\software\\winutils-master\\hadoop")
     val spark = SparkSession
       .builder()
       .appName("DeltaTableExample")
