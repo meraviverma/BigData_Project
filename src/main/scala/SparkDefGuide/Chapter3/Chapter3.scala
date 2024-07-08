@@ -2,12 +2,15 @@ package SparkDefGuide.Chapter3
 
 import conf.SparkConfiguration
 
+import java.lang.Thread.sleep
+
 object Chapter3 extends SparkConfiguration{
   case class Flight(DEST_COUNTRY_NAME:String,ORIGIN_COUNTRY_NAME:String,count:BigInt)
   def main(args: Array[String]):Unit={
 
     import sc.implicits._
-    val flightDF=sc.read.parquet("D:\\mypro\\spark\\data-sparkguide\\2010-summary.parquet")
+    val flightDF=sc.read.parquet("D:\\SparkProject\\data-sparkguide\\2010-summary.parquet")
+    flightDF.printSchema()
     val flights=flightDF.as[Flight]
 
     flights
@@ -23,6 +26,7 @@ object Chapter3 extends SparkConfiguration{
     //Structure Streaming
 
 
+    sleep(50000000)
 
   }
 

@@ -6,223 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="3fd77aad-808f-4b3a-b0fc-127c083ca30c" name="Default Changelist" comment="new commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/DeltaTableExample/DeltaTableExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/DeltaTableExample/DeltaTableExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/SparkDefGuide/Chapter3/Chapter3.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/SparkDefGuide/Chapter3/Chapter3.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/joinExample/JoinDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/joinExample/JoinDemo.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Demo1/WordCount$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Demo1/WordCount$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Demo1/WordCount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Demo1/WordCount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DemoFileFormat/DemoAvro$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DemoFileFormat/DemoAvro$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DemoFileFormat/DemoAvro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DemoFileFormat/DemoAvro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DemoFileFormat/DemoJson$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DemoFileFormat/DemoJson$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DemoFileFormat/DemoJson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DemoFileFormat/DemoJson.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DemoFileFormat/DemoJson1$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DemoFileFormat/DemoJson1$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DemoFileFormat/DemoJson1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DemoFileFormat/DemoJson1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter11/Chapter11$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter11/Chapter11$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter11/Chapter11.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter11/Chapter11.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter3/Chapter3$$anonfun$main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter3/Chapter3$$anonfun$main$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter3/Chapter3$$anonfun$main$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter3/Chapter3$$anonfun$main$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter3/Chapter3$$typecreator4$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter3/Chapter3$$typecreator8$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter3/Chapter3$$typecreator10$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter3/Chapter3$$typecreator10$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter3/Chapter3$$typecreator5$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter3/Chapter3$$typecreator5$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter3/Chapter3$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter3/Chapter3$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter3/Chapter3$Flight$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter3/Chapter3$Flight$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter3/Chapter3$Flight.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter3/Chapter3$Flight.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter3/Chapter3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter3/Chapter3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter5/Chapter5$$typecreator5$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter5/Chapter5$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter5/Chapter5$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter5/Chapter5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter5/Chapter5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter6/Chapter6$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter6/Chapter6$$anonfun$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter6/Chapter6$$anonfun$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter6/Chapter6$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter6/Chapter6$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter6/Chapter6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter6/Chapter6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter7/Chapter7$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter7/Chapter7$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter7/Chapter7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter7/Chapter7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter8/Chapter8$$typecreator13$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter8/Chapter8$$typecreator21$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter8/Chapter8$$typecreator5$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter8/Chapter8$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter8/Chapter8$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter8/Chapter8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter8/Chapter8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter9/Chapter9$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter9/Chapter9$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter9/Chapter9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter9/Chapter9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/chapter2/Chapter2$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/chapter2/Chapter2$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/chapter2/Chapter2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/chapter2/Chapter2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/structfield/Demo1$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/structfield/Demo1$$anonfun$10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/structfield/Demo1$$anonfun$11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/structfield/Demo1$$anonfun$12.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/structfield/Demo1$$anonfun$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/structfield/Demo1$$anonfun$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/structfield/Demo1$$anonfun$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/structfield/Demo1$$anonfun$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/structfield/Demo1$$anonfun$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/structfield/Demo1$$anonfun$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/structfield/Demo1$$anonfun$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/structfield/Demo1$$anonfun$9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/structfield/Demo1$$anonfun$main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/structfield/Demo1$$typecreator13$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/structfield/Demo1$$typecreator21$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/structfield/Demo1$$typecreator5$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/structfield/Demo1$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/structfield/Demo1$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/structfield/Demo1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/structfield/Demo1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/structfield/Emp$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/structfield/Emp$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/structfield/Emp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/structfield/Emp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/structfield/Employee$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/structfield/Employee$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/structfield/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/structfield/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conf/SparkConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/conf/SparkConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/database2spark/Mysql2Spark$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database2spark/Mysql2Spark$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/database2spark/Mysql2Spark.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database2spark/Mysql2Spark.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hiveanalyticfunction/HiveAnalyticsFunction$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hiveanalyticfunction/HiveAnalyticsFunction$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hiveanalyticfunction/HiveAnalyticsFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hiveanalyticfunction/HiveAnalyticsFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/joinExample/JoinDemo$$typecreator13$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/joinExample/JoinDemo$$typecreator5$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/joinExample/JoinDemo$$typecreator16$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/joinExample/JoinDemo$$typecreator16$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/joinExample/JoinDemo$$typecreator6$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/joinExample/JoinDemo$$typecreator6$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/joinExample/JoinDemo$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/joinExample/JoinDemo$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/joinExample/JoinDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/joinExample/JoinDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/scala/DeltaTableExample/DeltaTableExample$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/src/main/scala/DeltaTableExample/DeltaTableExample$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/scala/DeltaTableExample/DeltaTableExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/src/main/scala/DeltaTableExample/DeltaTableExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/scala/serializationExample/KryoExample3$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/scala/serializationExample/KryoExample3$$anonfun$2$$anonfun$apply$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/scala/serializationExample/KryoExample3$$anonfun$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/scala/serializationExample/KryoExample3$$anonfun$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/scala/serializationExample/KryoExample3$$anonfun$main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/scala/serializationExample/KryoExample3$$anonfun$objectFile$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/scala/serializationExample/KryoExample3$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/src/main/scala/serializationExample/KryoExample3$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/scala/serializationExample/KryoExample3$Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/src/main/scala/serializationExample/KryoExample3$Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/scala/serializationExample/KryoExample3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/src/main/scala/serializationExample/KryoExample3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/scala/serializationExample/KyroExample2$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/scala/serializationExample/KyroExample2$$anonfun$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/scala/serializationExample/KyroExample2$$anonfun$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/scala/serializationExample/KyroExample2$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/src/main/scala/serializationExample/KyroExample2$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/scala/serializationExample/KyroExample2$Person$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/src/main/scala/serializationExample/KyroExample2$Person$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/scala/serializationExample/KyroExample2$Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/src/main/scala/serializationExample/KyroExample2$Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/scala/serializationExample/KyroExample2$delayedInit$body.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/src/main/scala/serializationExample/KyroExample2$delayedInit$body.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/scala/serializationExample/KyroExample2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/src/main/scala/serializationExample/KyroExample2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/hydra.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/SparkProject.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/avro-data/._SUCCESS.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/avro-data/.part-00000-7892f2ad-91aa-4cca-ac0b-02a6167a7fd2-c000.avro.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/avro-data/_SUCCESS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/avro-data/part-00000-7892f2ad-91aa-4cca-ac0b-02a6167a7fd2-c000.avro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/2010-12-01.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/2010-summary.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/2010-summary.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/2010-summary.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/2014-summary.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/2015-summary.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/Emp1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/Employee.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/delta-table/.part-00000-8800affc-4aca-41cb-beab-e4099934f707-c000.snappy.parquet.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/delta-table/_delta_log/00000000000000000000.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/delta-table/part-00000-8800affc-4aca-41cb-beab-e4099934f707-c000.snappy.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/emp.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/file.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/oracle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/part-00000-avro-data.avro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/sample.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/spark.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/src/main/scala/DemoFileFormat/File_format.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/src/mysql.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/student.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/student_detai.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/.idea/hydra.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/SparkProject.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/avro-data/._SUCCESS.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/avro-data/.part-00000-7892f2ad-91aa-4cca-ac0b-02a6167a7fd2-c000.avro.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/avro-data/_SUCCESS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/avro-data/part-00000-7892f2ad-91aa-4cca-ac0b-02a6167a7fd2-c000.avro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/data-sparkguide/2010-12-01.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/data-sparkguide/2010-summary.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/data-sparkguide/2010-summary.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/data-sparkguide/2010-summary.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/data-sparkguide/2014-summary.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/data-sparkguide/2015-summary.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/data-sparkguide/Emp1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/data-sparkguide/Employee.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/data-sparkguide/emp.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/file.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/oracle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/part-00000-avro-data.avro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/sample.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/spark.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/src/main/scala/DemoFileFormat/File_format.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/src/mysql.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/student.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/student_detai.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/.idea/hydra.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/SparkProject.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/avro-data/._SUCCESS.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/avro-data/.part-00000-7892f2ad-91aa-4cca-ac0b-02a6167a7fd2-c000.avro.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/avro-data/_SUCCESS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/avro-data/part-00000-7892f2ad-91aa-4cca-ac0b-02a6167a7fd2-c000.avro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/data-sparkguide/2010-12-01.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/data-sparkguide/2010-summary.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/data-sparkguide/2010-summary.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/data-sparkguide/2010-summary.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/data-sparkguide/2014-summary.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/data-sparkguide/2015-summary.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/data-sparkguide/Emp1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/data-sparkguide/Employee.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/data-sparkguide/emp.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/file.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/oracle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/part-00000-avro-data.avro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/sample.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/spark.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/src/main/scala/DemoFileFormat/File_format.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/src/mysql.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/student.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/student_detai.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/winsales.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/winsales.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/winsales.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/transformation_action/Transformation_Actions$$anon$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/transformation_action/Transformation_Actions$$anon$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/transformation_action/Transformation_Actions$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/transformation_action/Transformation_Actions$$anonfun$10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/transformation_action/Transformation_Actions$$anonfun$11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/transformation_action/Transformation_Actions$$anonfun$12.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/transformation_action/Transformation_Actions$$anonfun$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/transformation_action/Transformation_Actions$$anonfun$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/transformation_action/Transformation_Actions$$anonfun$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/transformation_action/Transformation_Actions$$anonfun$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/transformation_action/Transformation_Actions$$anonfun$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/transformation_action/Transformation_Actions$$anonfun$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/transformation_action/Transformation_Actions$$anonfun$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/transformation_action/Transformation_Actions$$anonfun$9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/transformation_action/Transformation_Actions$$anonfun$combOp$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/transformation_action/Transformation_Actions$$anonfun$seqOp$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/transformation_action/Transformation_Actions$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/transformation_action/Transformation_Actions$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/transformation_action/Transformation_Actions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/transformation_action/Transformation_Actions.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -285,13 +79,13 @@
       <recent name="D:\mypro\spark\data-sparkguide" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.OptimizeExample">
-    <configuration name="DeltaTableExample" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="src.main.scala.DeltaTableExample.DeltaTableExample" />
+  <component name="RunManager" selected="Application.JoinDemo">
+    <configuration name="CacheDemo" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="src.main.scala.cache.CacheDemo" />
       <module name="SparkProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.main.scala.DeltaTableExample.*" />
+          <option name="PATTERN" value="src.main.scala.cache.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -299,12 +93,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelloKryo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.main.scala.serializationExample.HelloKryo" />
+    <configuration name="Chapter3" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="SparkDefGuide.Chapter3.Chapter3" />
       <module name="SparkProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.main.scala.serializationExample.*" />
+          <option name="PATTERN" value="SparkDefGuide.Chapter3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -312,12 +106,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KyroExample2" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="src.main.scala.serializationExample.KyroExample2" />
+    <configuration name="JoinDemo" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="joinExample.JoinDemo" />
       <module name="SparkProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.main.scala.serializationExample.*" />
+          <option name="PATTERN" value="joinExample.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -325,12 +119,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OptimizeExample" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="src.main.scala.DeltaTableExample.OptimizeExample" />
+    <configuration name="ParallelismDemo" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="src.main.scala.performance.ParallelismDemo" />
       <module name="SparkProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.main.scala.DeltaTableExample.*" />
+          <option name="PATTERN" value="src.main.scala.performance.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -338,12 +132,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WordCount" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Demo1.WordCount" />
+    <configuration name="repartitionDemo" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="src.main.scala.repartitioncoalesce.repartitionDemo" />
       <module name="SparkProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Demo1.*" />
+          <option name="PATTERN" value="src.main.scala.repartitioncoalesce.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -352,19 +146,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.OptimizeExample" />
-      <item itemvalue="Application.WordCount" />
-      <item itemvalue="Application.DeltaTableExample" />
-      <item itemvalue="Application.HelloKryo" />
-      <item itemvalue="Application.KyroExample2" />
+      <item itemvalue="Application.repartitionDemo" />
+      <item itemvalue="Application.CacheDemo" />
+      <item itemvalue="Application.JoinDemo" />
+      <item itemvalue="Application.Chapter3" />
+      <item itemvalue="Application.ParallelismDemo" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.OptimizeExample" />
-        <item itemvalue="Application.DeltaTableExample" />
-        <item itemvalue="Application.WordCount" />
-        <item itemvalue="Application.HelloKryo" />
-        <item itemvalue="Application.KyroExample2" />
+        <item itemvalue="Application.JoinDemo" />
+        <item itemvalue="Application.repartitionDemo" />
+        <item itemvalue="Application.CacheDemo" />
+        <item itemvalue="Application.Chapter3" />
+        <item itemvalue="Application.ParallelismDemo" />
       </list>
     </recent_temporary>
   </component>
