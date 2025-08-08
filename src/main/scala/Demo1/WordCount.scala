@@ -8,8 +8,9 @@ object WordCount {
     System.setProperty("hadoop.home.dir", "E:\\software\\winutils-master\\hadoop")
     val spark = SparkSession
       .builder()
-      .appName(" first example")
+      .appName("first example")
       .master("local")
+      .config("spark.serializer", "org.apache.spark.serializer.KryoSerializer")
       .getOrCreate()
 
 
@@ -18,7 +19,10 @@ object WordCount {
 
     //Rdd
     val rdd = spark.sparkContext.parallelize(List(1, 2, 3));
-    println(rdd.collect().mkString(","));
+    val nums = rdd.collect()
+    val result = nums.mkString(",")
+    println(result)
+
     println(rdd.partitions.size)
 
 

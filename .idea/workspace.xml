@@ -5,18 +5,66 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3fd77aad-808f-4b3a-b0fc-127c083ca30c" name="Default Changelist" comment="new commit">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/SparkDefGuide/Chapter3/Chapter3.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/SparkDefGuide/Chapter3/Chapter3.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/joinExample/JoinDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/joinExample/JoinDemo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Demo1/WordCount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Demo1/WordCount.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter3/Chapter3$$typecreator10$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter3/Chapter3$$typecreator10$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter3/Chapter3$$typecreator5$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter3/Chapter3$$typecreator5$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter3/Chapter3$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter3/Chapter3$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter3/Chapter3$Flight$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter3/Chapter3$Flight$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter3/Chapter3$Flight.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SparkDefGuide/Chapter3/Chapter3$Flight.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/joinExample/JoinDemo$$typecreator16$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/joinExample/JoinDemo$$typecreator16$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/joinExample/JoinDemo$$typecreator6$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/joinExample/JoinDemo$$typecreator6$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/joinExample/JoinDemo$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/joinExample/JoinDemo$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Demo1/WordCount$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Demo1/WordCount$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/main/scala/serializationExample/HelloKryo$SomeClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/src/main/scala/serializationExample/HelloKryo$SomeClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/main/scala/serializationExample/HelloKryo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/src/main/scala/serializationExample/HelloKryo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/hydra.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/SparkProject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/avro-data/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/avro-data/.part-00000-7892f2ad-91aa-4cca-ac0b-02a6167a7fd2-c000.avro.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/avro-data/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/avro-data/part-00000-7892f2ad-91aa-4cca-ac0b-02a6167a7fd2-c000.avro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/2010-12-01.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/2010-summary.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/2010-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/2010-summary.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/2014-summary.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/2015-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/Emp1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/Employee.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/delta-table/.part-00000-8800affc-4aca-41cb-beab-e4099934f707-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/delta-table/_delta_log/00000000000000000000.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/delta-table/part-00000-8800affc-4aca-41cb-beab-e4099934f707-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/emp.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/optimize/.part-00000-2cc26393-0dcb-47f4-b779-2507c73b3896-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/optimize/.part-00001-7cb981f1-940d-42f0-a9d8-bb658e5e20fe-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/optimize/.part-00002-aed58ff0-5c85-4742-b1fd-045285cc86d2-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/optimize/.part-00003-8260560d-de2b-4614-b59d-7d76ddb9162c-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/optimize/.part-00004-c17a811a-ce95-4f7f-8a11-d1c9ff603773-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/optimize/_delta_log/00000000000000000000.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/optimize/part-00000-2cc26393-0dcb-47f4-b779-2507c73b3896-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/optimize/part-00001-7cb981f1-940d-42f0-a9d8-bb658e5e20fe-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/optimize/part-00002-aed58ff0-5c85-4742-b1fd-045285cc86d2-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/optimize/part-00003-8260560d-de2b-4614-b59d-7d76ddb9162c-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/data-sparkguide/optimize/part-00004-c17a811a-ce95-4f7f-8a11-d1c9ff603773-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/file.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/oracle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/part-00000-avro-data.avro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/sample.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/spark.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/src/main/scala/DemoFileFormat/File_format.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/src/mysql.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/student.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/student_detai.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/winsales.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,48 +105,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/guide/scalaproject&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.scala.compiler.ScalaCompileServerForm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/SparkProject/data-sparkguide",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propCompiler"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\SparkProject\data-sparkguide" />
       <recent name="D:\mypro\spark" />
       <recent name="D:\mypro\spark\data-sparkguide" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JoinDemo">
+  <component name="RunManager" selected="Application.shaktitest">
     <configuration name="CacheDemo" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="src.main.scala.cache.CacheDemo" />
       <module name="SparkProject" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="src.main.scala.cache.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Chapter3" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="SparkDefGuide.Chapter3.Chapter3" />
-      <module name="SparkProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SparkDefGuide.Chapter3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,12 +155,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParallelismDemo" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="src.main.scala.performance.ParallelismDemo" />
+    <configuration name="WordCount" type="Application" factoryName="Application" temporary="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Demo1.WordCount" />
       <module name="SparkProject" />
+      <option name="PROGRAM_PARAMETERS" value="--add-exports=java.base/sun.nio.ch=ALL-UNNAMED" />
+      <option name="VM_PARAMETERS" value="--add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.main.scala.performance.*" />
+          <option name="PATTERN" value="Demo1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,12 +172,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="repartitionDemo" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="src.main.scala.repartitioncoalesce.repartitionDemo" />
+    <configuration name="WordCountAnalytics" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="src.main.scala.Demo1.WordCountAnalytics" />
       <module name="SparkProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.main.scala.repartitioncoalesce.*" />
+          <option name="PATTERN" value="src.main.scala.Demo1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="shaktitest" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="src.main.scala.Demo1.shaktitest" />
+      <module name="SparkProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.main.scala.Demo1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,19 +199,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.repartitionDemo" />
+      <item itemvalue="Application.WordCountAnalytics" />
+      <item itemvalue="Application.shaktitest" />
+      <item itemvalue="Application.WordCount" />
       <item itemvalue="Application.CacheDemo" />
       <item itemvalue="Application.JoinDemo" />
-      <item itemvalue="Application.Chapter3" />
-      <item itemvalue="Application.ParallelismDemo" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JoinDemo" />
-        <item itemvalue="Application.repartitionDemo" />
+        <item itemvalue="Application.shaktitest" />
+        <item itemvalue="Application.WordCountAnalytics" />
+        <item itemvalue="Application.WordCount" />
         <item itemvalue="Application.CacheDemo" />
-        <item itemvalue="Application.Chapter3" />
-        <item itemvalue="Application.ParallelismDemo" />
+        <item itemvalue="Application.JoinDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -196,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681550053934</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="new commit">
+      <created>1720401952319</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1720401952319</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,22 +276,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new commit" />
     <option name="LAST_COMMIT_MESSAGE" value="new commit" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/src/main/scala/Demo1/WordCount.scala</url>
-          <line>21</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/src/main/scala/Demo1/WordCount.scala</url>
-          <line>20</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
