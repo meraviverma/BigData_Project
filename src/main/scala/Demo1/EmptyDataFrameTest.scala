@@ -1,7 +1,7 @@
 package src.main.scala.Demo1
 import org.apache.spark.sql.{DataFrame, SparkSession}
 import org.apache.spark.sql.functions._
-object shaktitest {
+object EmptyDataFrameTest {
 
   def main(args: Array[String]): Unit = {
     val spark = SparkSession
@@ -12,5 +12,6 @@ object shaktitest {
       .getOrCreate()
 
     val  df= spark.emptyDataFrame
+    df.show()
     }
 }
